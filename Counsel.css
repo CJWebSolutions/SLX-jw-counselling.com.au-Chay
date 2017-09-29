@@ -1,0 +1,177 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/*----------------------------------------------------------------
+    Branding Colour
+----------------------------------------------------------------*/
+p, ul li {
+    color:#222;
+    font-weight: 400;}
+h3, h2, h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #222;}
+h3, h2, h1, .btn,.formbuilder-form .row label, .formbuilder-form input#submit-form, #extraFormsContainer .modal-dialog .formbuilder-form input#submit-form {
+    text-transform: uppercase;}
+/*----------------------------------------------------------------
+    Buttons
+----------------------------------------------------------------*/
+.btn{
+    width: 40%;
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    transition: 0.2s 0.2s ease-out;
+}
+.btn:hover, .btn:focus, .btn:active, .btn.active, .open>.dropdown-toggle.btn {
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.2);
+}
+#header2, #header2a a , #header2b a, .btn ,input#submit-form, #submit-form, .btn:hover, .btn:focus, .btn:active, .btn.active, .open>.dropdown-toggle.btn, .formbuilder-form input#submit-form:hover, .formbuilder-form input#submit-form, #extraFormsContainer .modal-dialog .formbuilder-form input#submit-form,footer a {text-decoration: none;}
+/*----------------------------------------------------------------
+    Forms
+----------------------------------------------------------------*/
+ .form, #contact_form_form, #quote_form_form, #extraFormsContainer .modal-dialog{
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.17);
+}
+.formbuilder-form .row input, .formbuilder-form .row select, .formbuilder-form .row textarea{
+    border: 1px solid #bbbbbb;
+}
+.formbuilder-form .row label, div.formbuilder-wrapper label {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #373737;
+    margin-bottom: 8px;
+}
+.formbuilder-form input#submit-form, #extraFormsContainer .modal-dialog .formbuilder-form input#submit-form{
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+.formbuilder-form input#submit-form:hover, .formbuilder-form input#submit-form:focus, .formbuilder-form input#submit-form:active, .formbuilder-form input#submit-form.active, .open>.dropdown-toggle.btn, #extraFormsContainer .modal-dialog .formbuilder-form input#submit-form:hover, #extraFormsContainer .modal-dialog .formbuilder-form input#submit-form:focus, #extraFormsContainer .modal-dialog .formbuilder-form input#submit-form:active, #extraFormsContainer .modal-dialog .formbuilder-form input#submit-form.active, .open>.dropdown-toggle.btn {
+    background-color: #000;
+    color: #fff;
+}
+/*----------------------------------------------------------------
+    Header
+----------------------------------------------------------------*/
+header{
+    padding: 0px 0 0px 0;}
+header a, header span, #header2a a, #header2a:before, #header2a, #header2b a,#services p  {
+    color: #000;}
+#header2a {
+    font-size: 35px;}
+#header2a:before {
+    font-size: 30px;}
+#header1 p {
+    padding-top: 20px;
+    line-height: 0px;}
+#header2 {
+    padding-top: 4px;
+    padding-bottom: 5px;}
+/*----------------------------------------------------------------
+    Banner 
+----------------------------------------------------------------*/
+#banner1 h1 {
+    color: #fff;
+    font-weight: 900;}
+ #banner1 p {
+    color: #fff;}
+#banner1 h1 {
+    font-size: 70px;}
+.banner_cover {
+    opacity: 0.3;
+    background-color: #000}
+#banner1 {
+    animation:move 2s ease;}
+@-webkit-keyframes move {
+  from {transform: scale(0.8);opacity:0;}
+  to {transform: scale(1.0);opacity:1;}
+}
+
+/*----------------------------------------------------------------
+    Services & Content
+----------------------------------------------------------------*/
+#services{
+    padding: 60px 0 40px;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;}
+#services h3 {
+    color: #fff;}
+#services p {
+    color: #fff;}
+#services h3:hover{
+    transform: scale(1.1);}
+#service1,#service2,#service3,#service4{
+    transition: 0.2s 0.2s ease-out;}
+#service1:hover,#service2:hover,#service3:hover,#service4:hover{
+    transform: scale(1.2);}
+/*----------------------------------------------------------------
+    Contact
+----------------------------------------------------------------*/
+#contact {
+    border-bottom: 5px solid rgb(103, 103, 103);}
+#contact p, #contact h2, .contact_detail a, .contact_detail a:hover, .contact_detail a:focus {
+    text-decoration: none;color: #fff;}
+#contact1b, #contact2, #gallery{
+    display: none;}
+#header1 {width:100%;}
+#contact1 {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;}
+/*----------------------------------------------------------------
+    Footer
+----------------------------------------------------------------*/
+footer, footer a, footer * {color: #000;}
+footer {
+    background-color: #f4f4f4;}
+footer a {font-weight: 500;}
+/*----------------------------------------------------------------
+    Media Queries
+----------------------------------------------------------------*/
+@media only screen and (max-width: 767px) and (min-width: 0px)  {
+    #header2b {
+        line-height: 18px;
+        padding-bottom: 10px;}
+    #header2 {padding-bottom: 0px;}
+    #services {padding: 80px 0 60px 0;}    
+    #header1 p {padding-top: 0px;}
+    #header {padding: 10px 0 10px 0;}
+    #header2a {line-height: 45px;}
+    #contact1{width: 80%;}
+    #service1:hover,#service2:hover,#service3:hover,#service4:hover{transform: scale(1.0);}
+}
+@media (max-width: 440px) {
+    #header2a a {font-size: 35px;}
+    #header2a:before {font-size: 30px;}
+    #banner h1 {font-size: 40px;}
+    #header2b {
+        line-height: 15px;
+        padding-bottom: 5px;}
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    #header2{padding-top: 0px;}
+    #header2b a{font-size: 14px;}
+    #header2a:before {font-size: 22px;}
+    #header2a {
+        font-size: 25px;
+        line-height: 18px;} 
+    #header2 {
+        padding-top: 13px;
+        padding-bottom: 5px;}
+}
+@media (max-width: 481px) {
+    #contact .img-responsive {display: block;margin: 0 auto;}
+    .list_half{float: none;}
+}
+@media only screen and (max-width: 991px) and (min-width: 408px) {.list_half {width: 100%;margin: 0;float: left;}}
+@media (min-width: 407px) {.list_half {width: 100%;}}
+@media only screen and (max-width: 690px) and (min-width: 441px) {#banner h1 {font-size: 50px;}}
+@media (max-width: 710px) {.btn{width:100%;word-wrap: break-word;}}
+@media (min-width: 0px) {.btn {margin-top: 10px;}}
+@media (max-width: 767px) {#service3 {clear:left }} 
